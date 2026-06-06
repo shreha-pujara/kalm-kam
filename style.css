@@ -1,0 +1,333 @@
+/* ==========================
+   GENERAL
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f8f9fa;
+overflow-x:hidden;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+padding:15px 0;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+font-size:30px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.nav-link{
+font-size:18px;
+margin-left:10px;
+transition:.4s;
+}
+
+.nav-link:hover{
+color:#ffc107 !important;
+}
+
+/* ==========================
+   DROPDOWN MENU
+========================== */
+
+.dropdown-menu{
+width:420px;
+border-radius:15px;
+}
+
+.dropdown-menu table{
+margin-bottom:10px;
+}
+
+.dropdown-menu th{
+background:#ffc107;
+color:#000;
+}
+
+/* ==========================
+   HERO BANNER
+========================== */
+
+.hero-banner{
+height:55vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)
+),
+
+url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1600');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-banner h1{
+font-size:60px;
+font-weight:bold;
+text-shadow:2px 2px 10px black;
+}
+
+.hero-banner p{
+font-size:22px;
+}
+
+/* ==========================
+   SLIDER
+========================== */
+
+.slider-img{
+height:90vh;
+object-fit:cover;
+filter:brightness(60%);
+}
+
+.carousel-caption{
+bottom:30%;
+}
+
+.carousel-caption h1{
+font-size:65px;
+font-weight:bold;
+text-shadow:2px 2px 10px black;
+}
+
+.carousel-caption p{
+font-size:24px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+border:none;
+border-radius:20px;
+overflow:hidden;
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.product-card img{
+height:250px;
+object-fit:cover;
+transition:.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.1);
+}
+
+.card-body{
+padding:25px;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table{
+background:white;
+border-radius:15px;
+overflow:hidden;
+}
+
+.table th{
+vertical-align:middle;
+}
+
+.table td{
+vertical-align:middle;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+border-radius:10px;
+padding:10px 22px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+.form-control{
+height:50px;
+border-radius:10px;
+}
+
+textarea.form-control{
+height:140px;
+resize:none;
+}
+
+/* ==========================
+   CART BOX
+========================== */
+
+.cart-box{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   PAYMENT BOX
+========================== */
+
+.payment-box{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   RESERVATION BOX
+========================== */
+
+.reserve-box{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   FEATURE SECTION
+========================== */
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:.4s;
+}
+
+.feature-box:hover{
+transform:translateY(-10px);
+}
+
+.feature-box i{
+font-size:50px;
+color:#ffc107;
+margin-bottom:15px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+margin-top:40px;
+}
+
+footer h5{
+margin:0;
+}
+
+/* ==========================
+   MAP
+========================== */
+
+iframe{
+border-radius:15px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.dropdown-menu{
+width:100%;
+}
+
+.hero-banner h1{
+font-size:45px;
+}
+
+.carousel-caption h1{
+font-size:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.slider-img{
+height:60vh;
+}
+
+.hero-banner{
+height:40vh;
+}
+
+.hero-banner h1{
+font-size:32px;
+}
+
+.hero-banner p{
+font-size:16px;
+}
+
+.carousel-caption{
+bottom:20%;
+}
+
+.carousel-caption h1{
+font-size:28px;
+}
+
+.carousel-caption p{
+font-size:15px;
+}
+
+.navbar-brand{
+font-size:24px;
+}
+
+.dropdown-menu{
+width:100%;
+}
+
+.product-card img{
+height:220px;
+}
+
+}
